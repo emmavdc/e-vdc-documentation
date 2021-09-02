@@ -1,4 +1,4 @@
-{
+﻿{
   "metadata": [
     {
       "src": [
@@ -28,7 +28,7 @@
       {
         "files": [
           "api/*.md",
-          "articles/**.md",
+          "documentation/**.md",
           "toc.yml",
           "*.md"
         ],
@@ -49,6 +49,12 @@
         ]
       }
     ],
+    "globalMetadata": {
+      "_appFooter": "Copyright © 2021 Vandecasteele Emma",
+      "_appTitle": "E Vdc Documentation",
+      "_appFaviconPath": "/images/E.svg",
+      "_enableNewTab": "true"
+    },
     "overwrite": [
       {
         "files": [
@@ -62,7 +68,8 @@
     ],
     "dest": "_site",
     "template": [
-      "default"
+      "default",
+      "simple_template"
     ]
   }
 }

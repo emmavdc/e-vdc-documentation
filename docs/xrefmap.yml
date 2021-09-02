@@ -1,0 +1,15 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: EVdcDocumentation
+  name: EVdcDocumentation
+  href: api/EVdcDocumentation.html
+  commentId: N:EVdcDocumentation
+  fullName: EVdcDocumentation
+  nameWithType: EVdcDocumentation
+- uid: EVdcDocumentation.Class1
+  name: Class1
+  href: api/EVdcDocumentation.Class1.html
+  commentId: T:EVdcDocumentation.Class1
+  fullName: EVdcDocumentation.Class1
+  nameWithType: Class1
