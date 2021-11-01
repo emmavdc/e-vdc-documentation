@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting started | E Vdc Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting started | E Vdc Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="..//images/E.svg">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting started</h1>
+
+<h2 id="basic-commands">Basic commands</h2>
+<p><u>Init</u> :</p>
+<pre><code>ng new my-app
+</code></pre><p><u>Component</u> :</p>
+<pre><code>ng generate component my-component
+</code></pre><p><u>Service</u> :</p>
+<pre><code>ng generate service my-service
+</code></pre><h2 id="navigation">Navigation</h2>
+<h3 id="routerlink">RouterLink</h3>
+<pre><code class="lang-html">&lt;li&gt;
+  &lt;a [routerLink]=&quot;[&#39;/gallery&#39;]&quot; &gt;Gallery&lt;/a&gt;
+&lt;/li&gt;
+</code></pre><h3 id="routernavigate">Router.Navigate</h3>
+<p>Example of using with a service :</p>
+<pre><code class="lang-javascript">import { Injectable } from &#39;@angular/core&#39;;
+import {Router} from &#39;@angular/router&#39;;
+import { Environment } from &#39;../models/environment&#39;;
+
+@Injectable({
+  providedIn: &#39;root&#39;
+})
+export class DatasourceService {
+
+  applicationEnv : Environment;
+
+  initApplication(newApplication){
+    this.applicationEnv = newApplication;
+    let i = 1;
+    for (const config of this.applicationEnv.configurations) {
+      config.configurationId = i;
+      i++;
+    }
+    this.router.navigate([&#39;/validation/local-application&#39;])
+  }
+
+  constructor(private readonly router: Router) { }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/emmavdc/e-vdc-documentation/blob/main/EVdcDocumentation/EVdcDocumentation/documentation/angular-foundation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2021 Vandecasteele Emma
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

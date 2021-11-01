@@ -1,5 +1,4 @@
-
-# Angular Tips
+# Getting started
 ## Basic commands
 <u>Init</u> :
 ```

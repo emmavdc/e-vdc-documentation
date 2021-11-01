@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="api\index.md" />
-    <None Include="documentation\angular.md" />
+    <None Include="documentation\angular-deploy-githubpages.md" />
+    <None Include="documentation\angular-devExtreme.md" />
+    <None Include="documentation\angular-foundation.md" />
     <None Include="documentation\intro.md" />
     <None Include="documentation\toc.md" />
     <None Include="docfx.json" />

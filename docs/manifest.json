@@ -17,11 +17,35 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "documentation/angular.md",
+      "source_relative_path": "documentation/angular-deploy-githubpages.md",
       "output": {
         ".html": {
-          "relative_path": "documentation/angular.html",
-          "hash": "td7SLwCP8TIgiF9EcTi2e7yFEILyoj2Ia2BWqNWgSRs="
+          "relative_path": "documentation/angular-deploy-githubpages.html",
+          "hash": "WvhbAHCBTj6oE7a60BsLDlsCN1iOgFOBt3W7HvfT5vM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/angular-devExtreme.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/angular-devExtreme.html",
+          "hash": "NA/I50Tm6oEMadl0GXKvEBn65LCW6tGHHq1PJ2T/9eI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/angular-foundation.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/angular-foundation.html",
+          "hash": "4N2oljv9VmSFDNfqfaTODbcAjojh+OD+4UG9g1sFZwE="
         }
       },
       "is_incremental": false,
@@ -45,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "documentation/toc.html",
-          "hash": "iKKS245WBsc5PsxoA71awcPicADk9I8FHs3ybJhRlwY="
+          "hash": "bKpMdfsny6T/cVDZXkrlHqiJVCqayZipUlvuil0lrAw="
         }
       },
       "is_incremental": false,
@@ -116,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "TvE/qOiWHSGlYdV7fWSPtAeLAYYoeXfD8NHUVd3Y5VY="
+          "hash": "v5GkqkjaGSrMMqwwnuNMXdckvVMgJx3LOS92KOCX0mk="
         }
       },
       "is_incremental": false,
@@ -137,7 +161,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
