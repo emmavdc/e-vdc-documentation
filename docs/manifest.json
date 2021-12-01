@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/0.mes-projets/e-vdc-documentation/EVdcDocumentation/EVdcDocumentation",
+  "source_base_path": "C:/Users/G52634/source/repos/0.my-repos/emmavdc3/e-vdc-documentation/EVdcDocumentation/EVdcDocumentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -12,7 +12,7 @@
           "hash": "OI4B5EIDVo20V4WPbWybzFWSPNw51o1PA9pmPAT6nz8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "WvhbAHCBTj6oE7a60BsLDlsCN1iOgFOBt3W7HvfT5vM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "NA/I50Tm6oEMadl0GXKvEBn65LCW6tGHHq1PJ2T/9eI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "documentation/angular-foundation.html",
-          "hash": "4N2oljv9VmSFDNfqfaTODbcAjojh+OD+4UG9g1sFZwE="
+          "hash": "AaBAL5ADVNDglTBOHx5xThjnY8hVCH9RTFIdGj341kU="
         }
       },
       "is_incremental": false,
@@ -60,7 +60,7 @@
           "hash": "Uzw5OqWW5XFZwiHblMlf50QYobrlQDFH7FKvVAJ/XCw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -95,7 +95,7 @@
           "hash": "26hmo4k2ay6+v9jJjLIGm/KFyCx/jurtlxqljR0IAs4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -107,7 +107,7 @@
           "hash": "cEvann0cXawYvpSUbNBtUfUYPltduu7LW5FRKbfdHwo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -119,7 +119,7 @@
           "hash": "pxLhQNKQiTjPDCjygJULLpD4c2AA184HIOQgQLMmzx8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -150,25 +150,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 6,
-          "skipped_file_count": 0
+          "skipped_file_count": 5
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -188,8 +186,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

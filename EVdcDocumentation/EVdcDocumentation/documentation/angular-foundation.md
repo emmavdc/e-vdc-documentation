@@ -1,46 +1,45 @@
 # Getting started
 ## Basic commands
-<u>Init</u> :
+<u>Create angular app</u> :
 ```
-ng new my-app
+ng new app
 ```
-<u>Component</u> :
+<u>Create component</u> :
 ```
 ng generate component my-component
 ```
-<u>Service</u> :
+OR
+```
+ng g c my-component
+```
+
+<u>Create service</u> :
 ```
 ng generate service my-service
+```
+OR
+```
+ng g s my-service
 ```
 ##Navigation
 ### RouterLink
 ```html
-<li>
-  <a [routerLink]="['/gallery']" >Gallery</a>
-</li>
+<a [routerLink]="['/somewhere']" >Somewhere</a>
 ```
 ### Router.Navigate
 Example of using with a service :
 ```javascript
 import { Injectable } from '@angular/core';
 import {Router} from '@angular/router';
-import { Environment } from '../models/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DatasourceService {
 
-  applicationEnv : Environment;
-
-  initApplication(newApplication){
-    this.applicationEnv = newApplication;
-    let i = 1;
-    for (const config of this.applicationEnv.configurations) {
-      config.configurationId = i;
-      i++;
-    }
-    this.router.navigate(['/validation/local-application'])
+  myMethod(newApplication){  
+   ...
+    this.router.navigate(['/somewhere']);
   }
 
   constructor(private readonly router: Router) { }

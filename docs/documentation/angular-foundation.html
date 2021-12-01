@@ -70,38 +70,32 @@
 <h1 id="getting-started">Getting started</h1>
 
 <h2 id="basic-commands">Basic commands</h2>
-<p><u>Init</u> :</p>
-<pre><code>ng new my-app
-</code></pre><p><u>Component</u> :</p>
+<p><u>Create angular app</u> :</p>
+<pre><code>ng new app
+</code></pre><p><u>Create component</u> :</p>
 <pre><code>ng generate component my-component
-</code></pre><p><u>Service</u> :</p>
+</code></pre><p>OR</p>
+<pre><code>ng g c my-component
+</code></pre><p><u>Create service</u> :</p>
 <pre><code>ng generate service my-service
+</code></pre><p>OR</p>
+<pre><code>ng g s my-service
 </code></pre><h2 id="navigation">Navigation</h2>
 <h3 id="routerlink">RouterLink</h3>
-<pre><code class="lang-html">&lt;li&gt;
-  &lt;a [routerLink]=&quot;[&#39;/gallery&#39;]&quot; &gt;Gallery&lt;/a&gt;
-&lt;/li&gt;
+<pre><code class="lang-html">&lt;a [routerLink]=&quot;[&#39;/somewhere&#39;]&quot; &gt;Somewhere&lt;/a&gt;
 </code></pre><h3 id="routernavigate">Router.Navigate</h3>
 <p>Example of using with a service :</p>
 <pre><code class="lang-javascript">import { Injectable } from &#39;@angular/core&#39;;
 import {Router} from &#39;@angular/router&#39;;
-import { Environment } from &#39;../models/environment&#39;;
 
 @Injectable({
   providedIn: &#39;root&#39;
 })
 export class DatasourceService {
 
-  applicationEnv : Environment;
-
-  initApplication(newApplication){
-    this.applicationEnv = newApplication;
-    let i = 1;
-    for (const config of this.applicationEnv.configurations) {
-      config.configurationId = i;
-      i++;
-    }
-    this.router.navigate([&#39;/validation/local-application&#39;])
+  myMethod(newApplication){  
+   ...
+    this.router.navigate([&#39;/somewhere&#39;]);
   }
 
   constructor(private readonly router: Router) { }
